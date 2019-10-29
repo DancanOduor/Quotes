@@ -13,7 +13,7 @@
       
   <div class="form-group">
 
-      <label for="description">Description</label>
+      <label for="description">Quote</label>
       <input type="text" class="form-control" id="description" [(ngModel)]="newQuote.description" name="description" #description='ngModel' required>
       <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
           <p>Description required</p>

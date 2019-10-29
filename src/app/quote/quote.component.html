@@ -1,13 +1,16 @@
+<div class="home">
 <div class="container">
   <h1>MY QUOTES</h1>
   <hr>
 
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 text-center">
       <div *ngFor='let quote of quotes;let i = index'>
-        <div>
+        <div class="qut">
           <h6 id={{i}} appStrikethrough> Name:{{quote.name}} and the Author is {{quote.author}}. wrote on {{quote.completeDate|date|uppercase}}</h6>
+          <like-box></like-box>
           <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+          
         </div>
 
         <div *ngIf='quote.showDescription'>
@@ -22,4 +25,5 @@
     </div>
   </div>
   <p *ngIf='quotes.length > 5'>You have too many quotes</p>
+</div>
 </div>
