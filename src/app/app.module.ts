@@ -10,7 +10,9 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { LikeComponent } from './like/like.component';
-import { HighlitDirectiveComponent } from './highlit-directive/highlit-directive.component';
+// import { HighlitDirectiveComponent } from './highlit-directive/highlit-directive.component';
+// import { HighlightDirectiveComponent } from './highlight-directive/highlight-directive.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HighlitDirectiveComponent } from './highlit-directive/highlit-directive
     DateCountPipe,
     QuoteFormComponent,
     LikeComponent,
-    HighlitDirectiveComponent
+    // HighlitDirectiveComponent,
+    // HighlightDirectiveComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
